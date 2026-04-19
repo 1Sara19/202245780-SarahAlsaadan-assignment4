@@ -128,6 +128,14 @@ Lighthouse testing was also used to evaluate the website quality. The desktop re
 
 These results showed that the website performed very well in most areas. The lower Best Practices score was mainly related to local testing over HTTP instead of HTTPS, not to a major issue in the website functionality itself.
 
+## Deployment
+
+The portfolio website was deployed using GitHub Pages so it can be accessed publicly online.
+
+## Accessibility and Final Quality Improvements
+
+The final version also includes clear focus states for interactive elements, improved form feedback, and responsive refinements for smaller screens.
+
 ## Conclusion
 
 This project demonstrates front-end development skills using HTML, CSS, and JavaScript. It includes dynamic features, API integration, state persistence, form validation, and structured documentation.
