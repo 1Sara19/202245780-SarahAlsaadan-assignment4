@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en" class="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sarah Alsadaan | Portfolio</title>
+  <meta name="description" content="Sarah Alsadaan portfolio website showcasing web development and database projects, technical skills, and GitHub repositories." />
+  <link rel="stylesheet" href="css/styles.css" />
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+
+  <div id="greetingNotice" class="greeting-notice"></div>
+  
+  <!-- Header / Navigation -->
+  <header class="site-header">
+    <nav class="nav">
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+
+      <!-- Theme toggle button -->
+      <button id="themeToggle" class="theme-btn" type="button" aria-label="Toggle theme">☀️</button>
+    </nav>
+  </header>
+
+  <main class="container">
+
+    <!-- About Section -->
+    <section id="about" class="card">
+      <h1>Sarah Alsadaan</h1>
+      <p class="tagline">Software Engineering Student | Web Development</p>
+      
+      <p>
+        I am a Software Engineering student at King Fahd University of Petroleum and Minerals (KFUPM).
+        I am passionate about building responsive web applications and creating user-friendly digital experiences.
+        I also have a growing interest in artificial intelligence and how it can be applied to solve real-world problems.
+      </p>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="card">
+      <h2>Projects</h2>
+      <p class="section-note">
+        Here are some of the projects I have worked on in web development and database systems.
+      </p>
+
+      <div class="projects-tools">
+        <button class="btn filter-btn active" type="button" data-filter="all">All</button>
+        <button class="btn filter-btn" type="button" data-filter="web">Web</button>
+        <button class="btn filter-btn" type="button" data-filter="database">Database</button>
+
+        <select id="sortProjects" class="sort-select" aria-label="Sort projects">
+          <option value="default">None</option>
+          <option value="az">A to Z</option>
+          <option value="za">Z to A</option>
+        </select>
+      </div>
+
+      <div class="grid" id="projectsGrid">
+
+        <article class="project" data-category="web">
+          <img src="assets/images/Pantrix.png" alt="Pantrix Project Preview" class="project-img" loading="lazy" />
+          <h3>Pantrix — Smart Cooking Assistant</h3>
+          <p>
+            A smart web application that matches available home ingredients with suitable recipes
+            to reduce food waste. It includes recipe ranking, filters for cooking time and categories,
+            and allergy or dietary restriction options.
+          </p>
+        </article>
+
+        <article class="project" data-category="database">
+          <img src="assets/images/HorseRacing.png" alt="Horse Stable Management Database Preview" class="project-img" loading="lazy" />
+          <h3>Horse Stable Management Database</h3>
+          <p>
+            A database system designed to manage horse stable operations efficiently.
+            The system stores information about horses, trainers, medical records, and stable assignments
+            using well-structured relational database tables. It demonstrates the use of SQL queries,
+            relationships, and data organization to handle real-world management scenarios.
+          </p>
+        </article>
+
+      </div>
+
+      <p id="projectsMessage" class="muted"></p>
+    </section>
+
+    <!-- GitHub Projects Section -->
+    <section class="card">
+      <h2>GitHub Projects</h2>
+      <div id="github-container" class="github-grid">
+        <p class="muted">Loading projects...</p>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="card">
+      <h2>Contact</h2>
+      <p class="section-note">
+        Feel free to send a message through the form below.
+      </p>
+
+      <form id="contactForm" novalidate>
+        <label for="name">Name</label>
+        <input id="name" name="name" type="text" />
+
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" />
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="4"></textarea>
+
+        <button class="btn" type="submit">Send</button>
+
+        <p id="formMsg" class="muted" aria-live="polite"></p>
+      </form>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <p class="muted">© <span id="year"></span> Sarah Alsadaan</p>
+  </footer>
+</body>
+</html>
