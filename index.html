@@ -4,33 +4,41 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Sarah Alsadaan | Portfolio</title>
-  <meta name="description" content="Sarah Alsadaan portfolio website showcasing web development and database projects, technical skills, and GitHub repositories." />
+  <meta
+    name="description"
+    content="Sarah Alsadaan portfolio website showcasing web development and database projects, technical skills, and GitHub repositories."
+  />
   <link rel="stylesheet" href="css/styles.css" />
   <script src="js/script.js" defer></script>
 </head>
 <body>
 
-  <div id="greetingNotice" class="greeting-notice"></div>
-  
-  <!-- Header / Navigation -->
+  <div id="greetingNotice" class="greeting-notice" aria-live="polite"></div>
+
   <header class="site-header">
     <nav class="nav">
       <a href="#about">About</a>
       <a href="#projects">Projects</a>
+      <a href="#github">GitHub</a>
       <a href="#contact">Contact</a>
 
-      <!-- Theme toggle button -->
-      <button id="themeToggle" class="theme-btn" type="button" aria-label="Toggle theme">☀️</button>
+      <button
+        id="themeToggle"
+        class="theme-btn"
+        type="button"
+        aria-label="Toggle theme"
+      >
+        ☀️
+      </button>
     </nav>
   </header>
 
   <main class="container">
 
-    <!-- About Section -->
     <section id="about" class="card">
       <h1>Sarah Alsadaan</h1>
       <p class="tagline">Software Engineering Student | Web Development</p>
-      
+
       <p>
         I am a Software Engineering student at King Fahd University of Petroleum and Minerals (KFUPM).
         I am passionate about building responsive web applications and creating user-friendly digital experiences.
@@ -38,7 +46,6 @@
       </p>
     </section>
 
-    <!-- Projects Section -->
     <section id="projects" class="card">
       <h2>Projects</h2>
       <p class="section-note">
@@ -60,17 +67,30 @@
       <div class="grid" id="projectsGrid">
 
         <article class="project" data-category="web">
-          <img src="assets/images/Pantrix.png" alt="Pantrix Project Preview" class="project-img" loading="lazy" />
+          <img
+            src="assets/images/Pantrix.png"
+            alt="Pantrix Project Preview"
+            class="project-img"
+            loading="lazy"
+          />
           <h3>Pantrix — Smart Cooking Assistant</h3>
           <p>
             A smart web application that matches available home ingredients with suitable recipes
             to reduce food waste. It includes recipe ranking, filters for cooking time and categories,
             and allergy or dietary restriction options.
           </p>
+          <div class="project-links">
+            <a href="https://github.com/" target="_blank" rel="noopener noreferrer">View Code</a>
+          </div>
         </article>
 
         <article class="project" data-category="database">
-          <img src="assets/images/HorseRacing.png" alt="Horse Stable Management Database Preview" class="project-img" loading="lazy" />
+          <img
+            src="assets/images/HorseRacing.png"
+            alt="Horse Stable Management Database Preview"
+            class="project-img"
+            loading="lazy"
+          />
           <h3>Horse Stable Management Database</h3>
           <p>
             A database system designed to manage horse stable operations efficiently.
@@ -78,22 +98,23 @@
             using well-structured relational database tables. It demonstrates the use of SQL queries,
             relationships, and data organization to handle real-world management scenarios.
           </p>
+          <div class="project-links">
+            <a href="https://github.com/" target="_blank" rel="noopener noreferrer">View Code</a>
+          </div>
         </article>
 
       </div>
 
-      <p id="projectsMessage" class="muted"></p>
+      <p id="projectsMessage" class="muted" aria-live="polite"></p>
     </section>
 
-    <!-- GitHub Projects Section -->
-    <section class="card">
+    <section id="github" class="card">
       <h2>GitHub Projects</h2>
       <div id="github-container" class="github-grid">
         <p class="muted">Loading projects...</p>
       </div>
     </section>
 
-    <!-- Contact Section -->
     <section id="contact" class="card">
       <h2>Contact</h2>
       <p class="section-note">
@@ -102,23 +123,22 @@
 
       <form id="contactForm" novalidate>
         <label for="name">Name</label>
-        <input id="name" name="name" type="text" />
+        <input id="name" name="name" type="text" required />
 
         <label for="email">Email</label>
-        <input id="email" name="email" type="email" />
+        <input id="email" name="email" type="email" required />
 
         <label for="message">Message</label>
-        <textarea id="message" name="message" rows="4"></textarea>
+        <textarea id="message" name="message" rows="4" required></textarea>
 
         <button class="btn" type="submit">Send</button>
 
-        <p id="formMsg" class="muted" aria-live="polite"></p>
+        <p id="formMsg" class="muted" aria-live="polite" role="status"></p>
       </form>
     </section>
 
   </main>
 
-  <!-- Footer -->
   <footer class="site-footer">
     <p class="muted">© <span id="year"></span> Sarah Alsadaan</p>
   </footer>

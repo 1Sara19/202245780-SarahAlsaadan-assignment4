@@ -1,6 +1,6 @@
-# 202245780-SarahAlsaadan-assignment3
+# 202245780-SarahAlsaadan-assignment4
 
-# Assignment 3 – Interactive Features
+# Assignment 4 – Interactive Features
 
 This project is a further improved version of my personal portfolio website from the previous assignments.  
 The main goal of this assignment is to continue enhancing the website by adding interactive features, dynamic behavior, and improved user experience using JavaScript.
@@ -100,4 +100,4 @@ ai-usage-report.md file
 
 ## Live Deployment
 
-This project is not deployed yet.
+[Click here](https://1sara19.github.io/202245780-SarahAlsaadan-assignment4/)

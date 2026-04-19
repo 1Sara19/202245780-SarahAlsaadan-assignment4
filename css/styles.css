@@ -11,7 +11,6 @@
   --shadow: rgba(0, 0, 0, 0.28);
 }
 
-/* light mode */
 .light {
   --bg: #f7f2e8;
   --card: #fffaf2;
@@ -160,6 +159,19 @@ textarea:focus,
 .sort-select:focus {
   border-color: var(--brand);
   box-shadow: 0 0 0 3px rgba(198, 222, 241, 0.25);
+}
+
+.nav a:focus-visible,
+.btn:focus-visible,
+.theme-btn:focus-visible,
+.sort-select:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+.project-links a:focus-visible,
+#github-container .project a:focus-visible {
+  outline: 2px solid var(--brand);
+  outline-offset: 3px;
+  border-radius: 8px;
 }
 
 .btn {
@@ -326,7 +338,8 @@ textarea:focus,
   flex-grow: 1;
 }
 
-#github-container .project a {
+#github-container .project a,
+.project-links a {
   display: inline-block;
   width: fit-content;
   margin-top: auto;
@@ -337,9 +350,14 @@ textarea:focus,
   transition: color 0.2s ease, border-color 0.2s ease;
 }
 
-#github-container .project a:hover {
+#github-container .project a:hover,
+.project-links a:hover {
   color: var(--highlight);
   border-color: var(--highlight);
+}
+
+.project-links {
+  margin-top: 0.75rem;
 }
 
 @media (max-width: 700px) {
@@ -349,5 +367,25 @@ textarea:focus,
 
   .nav {
     flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 500px) {
+  .nav {
+    justify-content: center;
+  }
+
+  .card {
+    padding: 1rem;
+  }
+
+  .project-img {
+    height: 180px;
+  }
+
+  .greeting-notice {
+    right: 12px;
+    left: 12px;
+    top: 12px;
   }
 }
