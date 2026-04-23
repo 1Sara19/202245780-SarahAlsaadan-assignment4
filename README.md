@@ -85,7 +85,9 @@ The project is organized into separate files:
 
 1. Clone or download the repository  
 2. Open the project folder  
-3. Open index.html in your browser  
+3. Open index.html in your browser
+
+Or you can access the website using the live link at the end of this page. 
 
 ## AI Usage
 
